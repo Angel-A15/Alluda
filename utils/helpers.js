@@ -20,3 +20,7 @@ module.exports = {
     return word;
   }
 };
+
+    return word;
+  }
+};
