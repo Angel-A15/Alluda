@@ -19,7 +19,6 @@
   "scripts": {
     "test": "jest",
     "start": "node server.js"
-
   },
   "name": "alluda",
   "description": "***An Application Designed For aiding in Mental Health Awareness***",
@@ -37,5 +36,9 @@
   "homepage": "https://github.com/PivotalSaint/alluda#readme",
   "devDependencies": {
     "prettier": "2.7.1"
-  }
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "keywords": []
 }

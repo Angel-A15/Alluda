@@ -84,10 +84,14 @@ header {
   background-blend-mode: screen;
 }
 
+#nav {
+  display: flex;
+  margin-right: 20px;
+}
+
 nav {
-  width: 100%;
-  margin-left: 58%;
-  justify-content: center;
+  justify-content: end;
+  display: flex;
 }
 
 nav a:hover {
