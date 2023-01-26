@@ -20,7 +20,5 @@
 ![img](/public/images/alluda-scrnsht1.png)
 
 ----
-## ***Mental Service Providers Links to their Websites***
-
 ## Deployed Link
 https://alluda1.herokuapp.com/
