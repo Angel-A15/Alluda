@@ -1168,8 +1168,9 @@ body {
 }
 
 .title {
-  font-size: 50px;
-
+  font-size: 7vw;
+  justify-content: center;
+  display: flex;
 }
 
 .row-12{
@@ -1201,4 +1202,32 @@ body {
 
 #mainp{
   margin: 3px 0 3px 0;
+}
+
+#logBtn {
+  width: 70px;
+  height: 35px;
+}
+
+#message {
+  font-size: 20px;
+}
+
+#alluda:hover{
+  text-decoration: none;
+}
+
+.step {
+  margin: 50px auto;
+  padding-bottom: 50px;
+  width: 80%;
+  border-bottom: 1px solid var(--tertiary-color);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.step-text {
+  flex: 12;
 }
