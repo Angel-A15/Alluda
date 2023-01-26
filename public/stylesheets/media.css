@@ -2,3 +2,7 @@
     background-image: none;
     background-color: rgb(230, 224, 236);
 }
+
+#message {
+    font-size: 20px;
+}

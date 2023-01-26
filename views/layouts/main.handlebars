@@ -19,56 +19,68 @@
   </head>
 
   <body class="hero background is-fullheight">
+      
+    <a class=' has-text-white is-bold title' id="alluda" href='/dashboard'>Alluda</a>
 
     <header
       class="hero-head"
       class="ml-2 mr-2 title is-size-12 has-text-large is-bold is-info">
 
-      <div class="mt-4">
-        <a  class='has-text-left ml-4 has-text-white is-bold title' href='/dashboard'>Alluda</a>
-      </div>
-
       {{#if loggedIn}}
-        <a class="button is-focused is-small is-responsive logout ml-5 mt-3"  href="/dashboard">
+        <a class="button is-focused  is-responsive logout ml-5 mt-3" id="logBtn"  href="/dashboard">
           logout
         </a>
       {{else}}
-        <a class="button is-focused is-small is-responsive  ml-5 mt-3"  href="/login">
+        <a class="button is-focused  is-responsive  ml-5 mt-3" id="logBtn" href="/login">
           login
         </a>
       {{/if}}
         
       <nav class="rows" id="nav">
 
-        <a class="button is-focused is-normal is-responsive mb-2 ml-2" href="/get-help">
-          Certified Providers
-        </a>
+        <div>
 
-        <a class="button is-focused is-normal is-responsive mb-2 ml-2" href="/media-page">
-          Media Resources
-        </a>
-
-        {{#if loggedIn}}
-          <a class="button is-focused is-normal is-responsive mb-2 ml-2" href="/notes-page">
-            Journal Log
+          <a class="button is-focused is-normal is-responsive mb-2 ml-2" href="/get-help">
+            Certified Providers
           </a>
-        {{else}}
-          <a class="button is-focused is-normal is-responsive mb-2 ml-2"  href="/login">
-            Journal Log
+
+          <a class="button is-focused is-normal is-responsive mb-2 ml-2" href="/media-page">
+            Media Resources
           </a>
-        {{/if}}
 
-        <a class="button is-focused is-normal is-responsive mb-2 ml-2" href="/about-us-page" >
-          About Us
-        </a>
+          {{#if loggedIn}}
+            <a class="button is-focused is-normal is-responsive mb-2 ml-2" href="/notes-page">
+              Journal Log
+            </a>
+          {{else}}
+            <a class="button is-focused is-normal is-responsive mb-2 ml-2"  href="/login">
+              Journal Log
+            </a>
+          {{/if}}
 
-        <a class="button is-focused is-normal is-responsive mb-2 ml-2" href="/have-laugh-page" >
-            Laughing Therapy
-        </a>
+          <a class="button is-focused is-normal is-responsive mb-2 ml-2" href="/about-us-page" >
+            About Us
+          </a>
+
+          <a class="button is-focused is-normal is-responsive mb-2 ml-2" href="/have-laugh-page" >
+              Laughing Therapy
+          </a>
+
+        </div>
+
 
       </nav>
 
     </header>
+
+        <!-- Centered page message -->
+    <div>
+
+        <div class=" notification column">
+            <h1 id="message" class="columns is-centered">Aiding in Mental Health Support</h1>
+        </div>
+
+    </div>
 
     {{{ body }}}
 

@@ -82,6 +82,8 @@ header {
   background-image: url('../images/header-bg.jpg');
   background-size: cover;
   background-blend-mode: screen;
+  padding: 0px 0 20px 0;
+
 }
 
 #nav {
@@ -1168,8 +1170,9 @@ body {
 }
 
 .title {
-  font-size: 50px;
-
+  font-size: 7vw;
+  justify-content: center;
+  display: flex;
 }
 
 .row-12{
@@ -1194,11 +1197,43 @@ body {
 }
 
 #signform{
-  margin: 0px 700px 0px 700px;
   background-color: rgba(255, 254, 254, 0.5);
-  
+  margin: 100px 200px;
 }
 
 #mainp{
   margin: 3px 0 3px 0;
+}
+
+#logBtn {
+  width: 70px;
+  height: 35px;
+}
+
+#message {
+  font-size: 20px;
+}
+
+#alluda:hover{
+  text-decoration: none;
+}
+
+.step {
+  margin: 50px auto;
+  padding-bottom: 50px;
+  width: 80%;
+  border-bottom: 1px solid var(--tertiary-color);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.step-text {
+  flex: 12;
+}
+
+.submitBtn {
+  border: 1px solid black;
+  border-radius: 3px;
 }
