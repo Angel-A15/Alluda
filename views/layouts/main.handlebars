@@ -24,7 +24,8 @@
 
     <header
       class="hero-head"
-      class="ml-2 mr-2 title is-size-12 has-text-large is-bold is-info">
+      class="ml-2 mr-2 title is-size-12 has-text-large is-bold is-info"
+    >
 
       {{#if loggedIn}}
         <a class="button is-focused  is-responsive logout ml-5 mt-3" id="logBtn"  href="/dashboard">
@@ -68,22 +69,11 @@
 
         </div>
 
-
       </nav>
 
     </header>
 
-        <!-- Centered page message -->
-    <div>
-
-        <div class=" notification column">
-            <h1 id="message" class="columns is-centered">Aiding in Mental Health Support</h1>
-        </div>
-
-    </div>
-
     {{{ body }}}
-
 
     <footer class="hero-foot has-background-dark">
       <div class="content has-text-centered has-text-white">
@@ -100,6 +90,7 @@
     </footer>
 
     <script src="/js/logout.js"></script>
+    
   </body>
 
 </html>
