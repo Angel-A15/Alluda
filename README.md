@@ -1,4 +1,4 @@
-# alluda!
+# Alluda
 
 ***An Application Designed For aiding in Mental Health Awareness***
 
@@ -22,4 +22,5 @@
 ----
 ## ***Mental Service Providers Links to their Websites***
 
-##
+## Deployed Link
+https://alluda1.herokuapp.com/
