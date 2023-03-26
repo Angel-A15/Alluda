@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"/>
-    <link rel="stylesheet" href="stylesheets/style.css" />
-    
+    <link rel="stylesheet" href="css/style.css" />    
     
     <link
       rel="stylesheet"
@@ -27,11 +26,11 @@
       class="ml-2 mr-2 title is-size-12 has-text-large is-bold is-info"
     >
 
-      <a class="button is-focused  is-responsive  ml-5 mt-3" id="logBtn" href="/login">
+      <!-- <a class="button is-focused  is-responsive  ml-5 mt-3" id="logBtn" href="/login">
         login
-      </a>
+      </a> -->
         
-      <nav class="navbar navbar-expand-lg" id="nav">
+      <!-- <nav class="navbar navbar-expand-lg" id="nav">
 
         <div>
 
@@ -60,35 +59,40 @@
 
         </div>
 
-      </nav>
+      </nav> -->
 
-      <nav class="navbar navbar-expand-lg ">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="./assets/login.html">Login</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid is-size-4">
+          <a class="navbar-brand is-size-3" aria-current="page" href="./assets/homepage.html">Home</a>          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./assets/homepage.html">Home</a>
-              </li>
+
               <li class="nav-item">
                 <a class="nav-link" href="./assets/get-help.html">Certified Providers</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./assets/media.html">Media Resources</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item ">
                 <a class="nav-link" href="./assets/notes.html">Journal Log</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./assets/about-us.html">About Us</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./assets/">Laughing Therapy</a>
-              </li>
             </ul>
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <div class="buttons">
+                  <a class="button is-primary">
+                    <strong>Sign up</strong>
+                  </a>
+                  <a class="button is-light" href="./assets/login.html">Login</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </nav>

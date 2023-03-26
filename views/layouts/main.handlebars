@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"/>
-    <link rel="stylesheet" href="stylesheets/style.css" />
-    
+    <link rel="stylesheet" href="/public/css/style.css" />
     
     <link
       rel="stylesheet"
@@ -20,60 +19,76 @@
 
   <body class="hero background is-fullheight">
       
-    <a class=' has-text-white is-bold title' id="alluda" href="/home">Allguda</a>
+    <a class=' has-text-white is-bold title ' id="alluda" href="/home">Alluda</a>
 
     <header
       class="hero-head"
       class="ml-2 mr-2 title is-size-12 has-text-large is-bold is-info"
     >
 
-      {{#if loggedIn}}
-        <a class="button is-focused  is-responsive logout ml-5 mt-3" id="logBtn"  href="/dashboard">
-          logout
-        </a>
-      {{else}}
-        <a class="button is-focused  is-responsive  ml-5 mt-3" id="logBtn" href="/login">
-          login
-        </a>
-      {{/if}}
-        
-      <nav class="rows" id="nav">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid is-size-5">
 
-        <div>
+          <a class="navbar-brand is-size-3" aria-current="page" href="./assets/homepage.html">Home</a>          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-          <a class="button is-focused is-normal is-responsive mb-2 ml-2" href="/get-help">
-            Certified Providers
-          </a>
+          <div class="collapse navbar-collapse " id="navbarNavDropdown">
+            <ul class="navbar-nav">
 
-          <a class="button is-focused is-normal is-responsive mb-2 ml-2" href="/media-page">
-            Media Resources
-          </a>
-
-          {{#if loggedIn}}
-            <a class="button is-focused is-normal is-responsive mb-2 ml-2" href="/notes-page">
-              Journal Log
-            </a>
-          {{else}}
-            <a class="button is-focused is-normal is-responsive mb-2 ml-2"  href="/login">
-              Journal Log
-            </a>
-          {{/if}}
-
-          <a class="button is-focused is-normal is-responsive mb-2 ml-2" href="/about-us-page" >
-            About Us
-          </a>
-
+              <li class="nav-item">
+                <a class="nav-link" href="./assets/get-help.html">Certified Providers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./assets/media.html">Media Resources</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="./assets/notes.html">Journal Log</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./assets/about-us.html">About Us</a>
+              </li>
+            </ul>
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <div class="buttons">
+                  <a class="button is-primary">
+                    <strong>Sign up</strong>
+                  </a>
+                  {{#if loggedIn}}
+                  <a class="button is-light" href="/dashboard">
+                    Logout
+                  </a>
+                  {{else}}
+                  <a class="button is-light" href="/login">
+                    Login
+                  </a>
+                  {{/if}}
+                  <a class="button is-light" href="./assets/login.html">Login</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-
       </nav>
 
-      <nav class="navbar navbar-expand-lg ">
+      <nav class="navbar navbar-expand-lg is-light">
 
         <div class="container-fluid">
 
           {{!-- <a class="navbar-brand" href="../login.handlebars">
             Login
           </a> --}}
+
+          {{#if loggedIn}}
+          <a class="button is-light" href="/dashboard">
+            Logout
+          </a>
+          {{else}}
+          <a class="button is-light" href="/login">
+            Login
+          </a>
+          {{/if}}
 
           {{#if loggedIn}}
           <a class="navbar-brand" href="/dashboard">
