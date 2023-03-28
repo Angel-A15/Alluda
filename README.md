@@ -17,8 +17,7 @@
     capability of sending emails to their directed links.
 ----
 ## ***Screenshot of the Application***
-![Web capture_26-1-2023_21645_alluda1 herokuapp com](https://user-images.githubusercontent.com/106582411/214788003-d93413e0-2407-4033-befe-9bc3b3bee150.jpeg)
-
+![image](https://user-images.githubusercontent.com/106582411/228366457-aa8076f5-511b-4bcc-9bd4-3465f11a4121.png)
 ----
 ## Deployed Link
 https://alluda1.herokuapp.com/
