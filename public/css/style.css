@@ -79,10 +79,8 @@ a {
 
 header {
   background-color: var(--primary);
-  background-image: url('../images/header-bg.jpg');
-  background-size: cover;
   background-blend-mode: screen;
-  padding: 0px 0 20px 0;
+  /* padding: 0px 0 20px 0; */
 
 }
 
@@ -96,15 +94,12 @@ nav {
   display: flex;
 }
 
-nav a:hover {
-  color: var(--secondary);
-  background-color: var(--dark);
-}
 
 body {
   background-image: url('../images/alludaImg.jpg');
   background-size: cover;
   min-height: 100vh;
+  
 }
 
 .page-title {
@@ -1169,25 +1164,14 @@ body {
 }
 }
 
-.row-12{
+/* styles background color to faint white */
+#faintBckgrnd {
   background-color: rgba(255, 254, 254, 0.5);
-  padding-top: 20px;
+  padding: 20px;
 }
 
 #hptitle {
-  background-color: #5791bb;
-}
-
-#bodyClr {
-  background-image: none;
-  background-color: rgb(230, 224, 236);
-}
-
-
-#hp-text {
-  text-align: center;
-  margin-left: 30%;
-
+  background-color: rgba(255, 254, 254, 0.5);
 }
 
 #signform{
@@ -1210,10 +1194,10 @@ body {
 
 /* styles page title  */
 #alluda {
-  text-decoration: none;
+  text-decoration:none;
   display:contents;
-  font-size: 7vw;
-  justify-content: center;
+  background-color: #272f32;
+  font-size: 90px;
 }
 
 
@@ -1235,4 +1219,13 @@ body {
 .submitBtn {
   border: 1px solid black;
   border-radius: 3px;
+}
+
+#navtxtClr {
+  color: #18BC9C;
+}
+
+#msgCen {
+  display: flex;
+  justify-content: center;
 }
