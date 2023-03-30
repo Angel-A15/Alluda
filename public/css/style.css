@@ -1165,7 +1165,7 @@ body {
 }
 
 /* styles background color to faint white */
-#faintBckgrnd {
+.faintBckgrnd {
   background-color: rgba(255, 254, 254, 0.5);
   padding: 20px;
   text-align: -webkit-center;
