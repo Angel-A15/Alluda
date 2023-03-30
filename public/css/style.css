@@ -1168,7 +1168,10 @@ body {
 #faintBckgrnd {
   background-color: rgba(255, 254, 254, 0.5);
   padding: 20px;
+  text-align: -webkit-center;
+  margin: 50px 210px;
 }
+
 
 #hptitle {
   background-color: rgba(255, 254, 254, 0.5);
