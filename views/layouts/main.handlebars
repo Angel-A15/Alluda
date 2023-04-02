@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"/>
     <link rel="stylesheet" href="/css/style.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    {{!-- adds cssstyling to some content --}}
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.1.3/flatly/bootstrap.min.css"
@@ -29,7 +30,57 @@
       class="ml-2 mr-2 title is-size-12 has-text-large is-bold is-info"
     >
 
-      <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-primary">
+              <strong>Sign up</strong>
+            </a>
+            {{#if loggedIn}}
+            <a class="button is-light" href="/dashboard">
+              Logout
+            </a>
+            {{else}}
+            <a class="button is-light" href="/login">
+              Login
+            </a>
+            {{/if}}
+          </div>
+        </div>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a class="navbar-brand is-size-3" id="navtxtClr" href="/home-page">Home</a>
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          
+          <li class="nav-item mb-3">
+            <a class="nav-link " id="navtxtClr" href="/get-help">Certified Providers</a>
+          </li>
+          <li class="nav-item mb-3">
+            <a class="nav-link " id="navtxtClr" href="/media-page">Media Resources</a>
+          </li>
+          <li class="nav-item mb-3">
+            <a class="nav-link " id="navtxtClr" href="/notes-page">Journal Log</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " id="navtxtClr" href="/about-us-page">About Us</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      
+
+    </nav>
+    
+
+      {{!-- <nav class="navbar navbar-expand-lg">
         <div class="container-fluid is-size-5">
 
           <a class="navbar-brand is-size-3" id="navtxtClr" href="/home-page">Home</a>
@@ -68,10 +119,29 @@
                 </div>
               </div>
             </div>
+
           </div>
 
         </div>
-      </nav>
+                <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button is-primary">
+                <strong>Sign up</strong>
+              </a>
+              {{#if loggedIn}}
+              <a class="button is-light" href="/dashboard">
+                Logout
+              </a>
+              {{else}}
+              <a class="button is-light" href="/login">
+                Login
+              </a>
+              {{/if}}
+            </div>
+          </div>
+        </div>
+      </nav> --}}
 
     </header>
 
@@ -101,9 +171,13 @@
       </div>
     </footer>
 
+    {{!-- logout script --}}
     <script src="/js/logout.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
 
+    {{!-- bootstrap scripts --}}
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
   </body>
 
 </html>

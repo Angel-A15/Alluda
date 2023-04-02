@@ -84,7 +84,7 @@ header {
 
 }
 
-#nav {
+/* #nav {
   display: flex;
   margin-right: 20px;
 }
@@ -92,7 +92,7 @@ header {
 nav {
   justify-content: end;
   display: flex;
-}
+} */
 
 
 body {
@@ -245,8 +245,8 @@ body {
 }
 
 /* DISPLAY */
-.display-none {
-  display: none;
+/* .display-none {
+  display:-webkit-inline-flex;
 }
 
 .display-block {
@@ -259,7 +259,7 @@ body {
 
 .display-inline {
   display: inline;
-}
+} */
 
 /* HEIGHT / WIDTH UTILS */
 .w-100 {
@@ -1169,7 +1169,7 @@ body {
   background-color: rgba(255, 254, 254, 0.5);
   padding: 20px;
   text-align: -webkit-center;
-  margin: 50px 210px;
+  margin: auto;
 }
 
 
@@ -1223,12 +1223,23 @@ body {
   border: 1px solid black;
   border-radius: 3px;
 }
-
+/* styles li of drpdwn button  */
 #navtxtClr {
   color: #18BC9C;
+  display: contents;
+  
 }
 
 #msgCen {
   display: flex;
   justify-content: center;
+}
+
+#navBtns {
+flex-flow:row;
+}
+
+#navbar {
+  
+  display: flex;
 }
