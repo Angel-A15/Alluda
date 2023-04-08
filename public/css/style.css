@@ -1223,13 +1223,17 @@ body {
   border: 1px solid black;
   border-radius: 3px;
 }
-/* styles li of drpdwn button  */
+/* styles li of drpdwn button items */
 #navtxtClr {
   color: #18BC9C;
   display: contents;
   
 }
 
+/* styles home directory */
+#homeTag{
+  color: #18BC9C;
+}
 #msgCen {
   display: flex;
   justify-content: center;
@@ -1243,3 +1247,26 @@ flex-flow:row;
   
   display: flex;
 }
+
+ /* styles location of signing in/up/off btn  */
+#sinInOffSubBtn {
+  justify-content: end;
+}
+
+ /* styles content over 991 pixels */
+@media screen and (min-width: 992px) {
+
+  /* styles li navigation list with spacing */
+  #liSpace {
+
+    margin-right: 30px;
+
+  }
+
+  /* styles li navigation list position from main parent container */
+  #liPos {
+    justify-content: end;
+  }
+
+}
+
