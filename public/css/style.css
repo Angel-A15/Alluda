@@ -1268,5 +1268,10 @@ flex-flow:row;
     justify-content: end;
   }
 
+  /* styles the site message size */
+  .faintBckgrnd{
+  margin: 0px 250px;
+  }
+
 }
 
